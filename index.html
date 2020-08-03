@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Go Korea</title>
+  <!-- Load Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Stylish&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/styles.css" rel="stylesheet">
+  <!-- Mapbox -->
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" />
+</head>
+<body>
+  <!-- HTML Follows BEM naming conventions 
+  IDs are only used for sections to connect menu achors to sections -->
+  <header class="page__header">
+    <nav class="navbar__menu">
+      <!-- Navigation starts as empty UL that will be populated with JS -->
+      <ul id="navbar__list" >
+        <li class="menu__link">Welcome</li>
+        <li class="menu__link">Seoul</li>
+        <li class="menu__link">ToDo</li>
+        <li class="menu__link">K Food</li>
+        <li class="menu__link">Make Friends</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <header class="main__hero">
+      <h1 class="korea">Welcome To Korea</h1>
+      <div class="korea-logo" style="border: 1px solid red">
+        <img src="img/kor.png" width="100" height="100" alt="Korea Tourism Organization">
+        <a href="http://kto.visitkorea.or.kr/eng.kto" target="_blank"><img src="img/koreaOr.jpg" width="100" height="100" alt="Korea Tourism Organization"></a>
+        <a href="http://english.president.go.kr/" target="_blank"><img src="img/korealogo.jpg" width="75" height="70" style="margin-top: 15px" alt="Cheong Wa Dae"></a>
+        <a href="http://www.sto.or.kr/english/index.do" target="_blank"><img src="img/seoullogo.png" width="75" height="70" style="margin-top: 15px" alt="Seoul Tourism Organization"></a>
+      </div>
+    </header>
+    <!-- Each Section has an ID (used for the anchor) and 
+    a data attribute that will populate the li node.
+    Adding more sections will automatically populate nav.
+    The first section is set to active class by default -->
+    <section id="section1" data-nav="Section 1" class="your-active-class" style="border: 1px solid blue; width:100%;">
+      <div class="section1-container" style="border: 1px solid red; width:100%; height: 450px; padding: 4em;">
+          <div class="landing__container">
+            <h2>Soul-Seoul</h2>
+            <p>Korea is an exciting country that has vivid and soulful spirits everywhere. <br/>Seoul is a capital city of Korea where has undergone a very fast development for past 50 years. Each area has a their own story which you can time-travel between past and present.</p>
+          </div>
+      </div>
+      <div class="section1-container2" style="border: 1px solid red; width:100%; height: 600px; padding: 4em;">
+        <p>The blazing neon, the blaring K-pop, the beckoning street food, the beautiful natural escapes and the shopping. There are many reasons why Seoul is a full of souls city.</p>
+        <div class="image-sliderfade fade">
+          <img src="img/neon.jpeg" style="width: 98%; height: 330px">
+          <div class="img-caption">Neon Signs</div>
+        </div>
+        <div class="image-sliderfade fade">
+          <img src="img/view.jpeg" style="width: 98%; height: 330px">
+          <div class="img-caption">Nansan View</div>
+        </div>
+        <div class="image-sliderfade fade">
+          <img src="img/hanbok.jpeg" style="width: 98%; height: 330px">
+          <div class="img-caption">Girls in Hanbok</div>
+        </div>
+        <div class="image-sliderfade fade">
+          <img src="img/day_street.jpeg" style="width: 98%; height: 330px">
+          <div class="img-caption">Day Street View</div>
+        </div>
+        <div class="image-sliderfade fade">
+          <img src="img/traditional.jpeg" style="width: 98%; height: 330px">
+          <div class="img-caption">Ha Heoi Tal</div>
+        </div>
+        <div class="image-sliderfade fade">
+          <img src="img/cafe.jpeg" style="width: 98%; height: 330px">
+          <div class="img-caption">Woman in Cafe</div>
+        </div>
+        <div class="image-sliderfade fade">
+          <img src="img/Flower.jpeg" style="width: 98%; height: 330px">
+          <div class="img-caption">Flowers in Architecture</div>
+        </div>
+        <div class="image-sliderfade fade">
+          <img src="img/han_river.jpeg" style="width: 98%; height: 330px">
+          <div class="img-caption">Han River</div>
+        </div>
+        <div style="text-align: center">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      </section>
+    <section id="section2" data-nav="Section 2">
+      <div class="section2-container" style="border: 1px solid blue; width: 100%; padding: 4em;">
+        <div class="landing__container" style="border: 1px solid red; width: 60%; height: 40px">
+          <h2>What To Do</h2>
+        </div>
+      </div>
+      <div class="section2-container2" stype="border: 1px solid green">
+        <div id="attractions" style= "width: 100%;height: 1500px; border: 2px solid pink; display: flex; flex-direction: column; justify-content: space-evenly; text-align: center;">
+          <div class="history" style="height: 38%; border: 1px solid black; display: flex; flex-direction: column;">
+            <span style="font-size: 30px; margin-top: 20px; border: 1px solid red;">History<i class="material-icons" style="border: 1px solid red;" >history</i></span>
+            <div class="card-deck" style="margin-top: 20px;">
+              <div class="card">
+                <img class="card-img-top" src="img/gyeongbokgung.jpg" alt="Gyeongbokgung" style="height: 250px;">
+                <div class="card-body">
+                  <h5 class="card-title">Gyeongbokgung Palace</h5>
+                  <p class="card-text">The main royal palace of the Joseon dynasty.</p>
+                  <p class="card-text"><strong>Address:</strong> 161 Sajik-ro, Sejongno, Jongno-gu, Seoul, South Korea</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="img/deoksugung.jpg" alt="Deoksugung" style="height: 250px;">
+                <div class="card-body">
+                  <h5 class="card-title">Deoksugung</h5>
+                  <p class="card-text">A walled compound of palaces in Seoul that was inhabited by members of Korea's royal family during the Joseon monarchy.</p>
+                  <p class="card-text"><strong>Address:</strong> 199 Sejong-daero, Jeong-dong, Jung-gu, Seoul, South Korea</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="img/gwanghwamun-gate.jpg" alt="Gwanghwamun-Gate" style="height: 250px;">
+                <div class="card-body">
+                  <h5 class="card-title">Gwanghwamun Gate</h5>
+                  <p class="card-text">The main and largest gate of Gyeongbokgung Palace, in Jongno-gu, Seoul, South Korea.</p>
+                  <p class="card-text"><strong>Address:</strong> 161 Sajik-ro, Sejongno, Jongno-gu, Seoul, South Korea</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="culture" style="height: 38%; border: 1px solid black; display: flex; flex-direction: column;">
+            <span style="font-size: 30px; margin-top: 20px; border: 1px solid red;">Arts & Culture<i class="material-icons">brush</i></span>
+            <div class="card-deck" style="margin-top: 20px;">
+              <div class="card">
+                <img class="card-img-top" src="img/namsanT.jpeg" alt="Namsan" style="height: 250px;">
+                <div class="card-body">
+                  <h5 class="card-title">N Seoul Tower</h5>
+                  <p class="card-text">A communication and observation tower located on Namsan Mountain in central Seoul, South Korea.</p>
+                  <p class="card-text"><strong>Address:</strong> 161 Sajik-ro, Sejongno, Jongno-gu, Seoul, South Korea</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="img/bukchon.jpeg" alt="Bukchon" style="height: 250px;">
+                <div class="card-body">
+                  <h5 class="card-title">Bukchon Hanok Village</h5>
+                  <p class="card-text">A Korean traditional village in Seoul with a long history located on the top of a hill between Gyeongbok Palace, Changdeok Palace and Jongmyo Royal Shrine.</p>
+                  <p class="card-text"><strong>Address:</strong> 37 Gahoe-dong, Jongno-gu, Seoul, South Korea</p>
+                </div>
+              </div>
+              <div class="card">
+                <img class="card-img-top" src="img/myeong-dong.jpeg" alt="Myeong-dong" style="height: 250px;">
+                <div class="card-body">
+                  <h5 class="card-title">Myeong-dong</h5>
+                  <p class="card-text"> A commercial area, being one of Seoul's main shopping, parade route and tourism districts.</p>
+                  <p class="card-text"><strong>Address:</strong> Myeong-dongJung-gu, Seoul, South Korea</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="map" style='width: 100%px; height: 30%; margin-top: 20px;'>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="section3" data-nav="Section 3">
+      <div class="section3-container" style="border: 1px solid red; width:100%; height: 520px; padding: 4em; display: flex; flex-direction: row; justify-content: space-between;">
+        <div class="landing__container">
+          <h2>K-Food</h2>
+            <p>I believe that if you want to know the country, the best way to do it is to go to a country and eat food.</p>
+            <p>It's hard to tell how the authentic the food is nowadays, but places could tell you that this is Seoul in Korea.</p>
+        </div>
+        <div class="food_intro_picture">
+          <img src="img/korea-market.jpeg" alt="korea market" style="height: 400px; width: 400px;">
+        </div>
+      </div>
+      <div class="section3-container2" style="border: 1px solid red; width:100%; height: 900px; padding: 2em;">
+        <div class="shinchon" style="text-align: center;">
+          <i class="material-icons">local_drink</i><i class="material-icons">outdoor_grill</i>
+          <p>Soju and Beer (a.k.a Somak) with an affordable BBQ</p>
+          <p>If you want to feel young sprits of college students and try their soul food at the same time, I recommend you to visit Seodaemun-gu in Seoul.</p>
+          <img src="img/seoul_seodaemun-gu.png" alt="seodaemun-gu" style="width: 30%; height:30%;">
+          <p>There are Sinchon district where great colleges are located nearby. <br/>   Every March and April, every restaurants are full of youngsters celebrating new freshmen.</p>
+        </div>
+        <div class="sinchon_image" style="border: 1px solid blue; width: 100%;display: flex; flex-direction: row; justify-content:space-evenly">
+          <img src="img/drink.jpg" alt="drink_soju" style="width:40%; height:300px;">
+          <img src="img/k_bbq.jpeg" alt="k_bbq" style="width:55%; height:300px;">
+        </div>
+      </div>
+      <div class="section3-container3" style="border: 1px solid red; width:100%; height: 900px; padding: 2em;">
+        <div class="gangnam" style="text-align: center;">
+          <i class="material-icons">local_dining</i>
+          <p>Best All-over-the-world Cuisines</p>
+          <img src="img/seoul_gangnam-gu.png" alt="gangnam-gu" style="width: 30%; height:30%;">
+          <p>Gangnam style makes everything super great. You can meet diverse restaurants and I guarantee that almost of them are above the average.</p>
+          <p>Freshest sushi, creamy pasta, juicy hamburger, and applealing Han-jeongsik are here in Gangnam.</p>
+        </div>
+        <div class="gangnam_image" style="border: 1px solid blue";>
+          <img id="food1" src="img/sushi.jpeg" alt="sushi"style="width: 200px; height: 300px;">
+          <img id="food2" src="img/pasta.jpeg" alt="k_bbq" style="width: 100%; height: 100%;">
+          <img id="food3" src="img/hamburger.jpeg" alt="hamburger" style="width: 100%; height: 100%;">
+          <img id="food4" src="img/bibimbap.jpeg" alt="bibimbap" style="width: 100%; height: 100%;">
+        </div>
+      </div>
+      <div class="section3-bottom" style="text-align: center;">
+        <p><a href="https://www.mangoplate.com/en/"><img src="img/mango_plate.png" style="width: 130px; height: 70px;"></a>Visit Mangoplate to learn good places!</p>
+      </div>      
+    </section>
+    <section id="section4" data-nav="Section 4">
+      <div class="section3-container" style="border: 1px solid red; width:100%; height: 520px; display: flex; flex-direction: row; justify-content: space-between;">
+        <div class="landing__container" style="border: 1px solid red; width: 60%; height: 40px">
+          <h2>Make Friends</h2>
+          <p>Traveling is </p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="page__footer">
+    <p>&copy Jiwon Han</p>
+  </footer>
+
+      <!-- Bootstrap -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+      <!-- jquery -->
+      <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+      <script type="text/javascript" src="js/script.js"></script>
+      <script type="text/javascript" src="js/map.js"></script>
+      
+      <script data-cfasync="false" type="text/javascript" src="js/form-submission-handler.js"></script>
+
+</body>
+</html>
