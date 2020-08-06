@@ -24,7 +24,8 @@ h1 {
 }
 
 h2 {
-    border-bottom: 1px solid #f54242;
+    border-bottom: 2px solid #f54242;
+    /* width: 100%; */
     /* font-family: 'Oxygen', Sans-Serif; */
     font-size: 4em;
     color: #fff;
@@ -36,6 +37,11 @@ p {
     color: black;
 }
 
+.p-description {
+    color: #2c3543;
+    font-size: 1.5rem;
+    font-weight: 300;
+}
 a:hover, a:visited, a:link, a:active {
     text-decoration: none;
     color: grey;
@@ -50,15 +56,24 @@ main {
     min-height: 40vh;
     padding-top: 12em;
     background: url(../img/travel.jpeg);
-    background-size: 50% 100%;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
-    background-position: 100% 0;
-    height: 650px;
+    background-position: 0 100%;
+    min-height: 650px;
+    height: 100%;
+    text-align: center;
+}
+
+.korea {
+    font-size: 60px;
+    color: white;
 }
 
 .korea-logo{
-    margin-left: 40px;
-    width: 500px;
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+    width: 35%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -149,34 +164,49 @@ section:nth-of-type(even) .landing__container {
     height: 500px;
 }
 
-.section2-container {
-    background: url(../img/korea-train.jpg);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    height: 500px;
+.section1-container2 {
+    width: 100%;
+    max-height: 950px;
+    height: 100%;
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+ 
+.why-seoul {
+    margin-block-start: 1em;
+    margin-block-start: 1em;
+    
 }
 
-.section3-container {
-    background: url(../img/korea-zizimy.jpeg);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 500px;
+.seoul_image {
+    max-width: 100%;
+    width: 100%;
 }
 
-.section4-container {
-    background: url(../img/meetup_together.jpg);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    height: 500px;
+.seoul-description {
+    min-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-emphasis: center;
+    border: 1px solid blue;
 }
 
-.image__container {
-    position: relative; 
-    margin: auto;
-    box-sizing: border-box; 
+.seoul-image .image-sliderfade img {
+    max-width: 90%;
+    width: 100%;
+    min-height: 400px;
+    max-height: 400px;
+    height: 100%;
+}
+
+.seoul-image .image-dot {
+    max-width: 100%;
+    width: 100%;
+    text-align: center;
 }
 
 /* image slider */
@@ -192,7 +222,7 @@ img {
 .img-caption {
     color: #f2f2f2; 
     font-size: 15px; 
-    padding: 17px 15px; 
+    padding: 50px 80px; 
     position: absolute; 
     /* right: 2px;  */
     bottom: 50px; 
@@ -236,6 +266,46 @@ img {
   from {opacity: .4}  
   to {opacity: 1} 
 } 
+
+.seoul_description {
+    max-width: 30%;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section2-container {
+    background: url(../img/korea-train.jpg);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 500px;
+}
+
+.section3-container {
+    background: url(../img/korea-zizimy.jpeg);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: right;
+    height: 500px;
+}
+
+.section4-container {
+    background: url(../img/meetup_together.jpg);
+    background-size: 50% 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    height: 500px;
+}
+
+.image__container {
+    position: relative; 
+    margin: auto;
+    box-sizing: border-box; 
+}
+
+
 
 #carousel{
     width: 100%;
