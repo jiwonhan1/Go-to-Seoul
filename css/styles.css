@@ -1,3 +1,36 @@
+/* Header Styles */
+.page__header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+/* Navigation Styles*/
+.navbar__menu ul {
+    background: white;
+    padding-left: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.navbar__menu li {
+    display: inline-block;
+}
+
+.navbar__menu .menu__link {
+    display: inline-block;
+    padding: 1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #000;
+}
+
+.navbar__menu .menu__link:hover {
+    background: #333;
+    color: #fff;
+    transition: ease 0.3s all;
+}
 
 /* ---- Base Rules ---- */
 body {
@@ -64,76 +97,54 @@ main {
     text-align: center;
 }
 
-.korea {
-    font-size: 60px;
-    color: white;
+.korea-header {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    height: 90%;
+    min-height: 650px;
+    top: 10%;
 }
 
-.korea-logo{
+.korea-header-letter {
     position: absolute;
-    bottom: 10%;
+    bottom: 50%;
+    height: 25%;
+}
+
+.south-korea {
+    font-size: 60px;
+    color: white;
+    height: 30%;
+    text-transform: uppercase;
+}
+
+.seoul {
+    font-size: 60px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.south-korea-link {
+    color: white;
+    font-size: 20px;
+}
+
+.korea-header-logo{
+    position: absolute;
+    bottom: 20%;
     right: 5%;
-    width: 35%;
+    width: 30%;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
 
 section {
     position: relative;
     min-height: 80vh;
 }
-
-
-/* ---- Module Rules ---- */
-
-/* Navigation Styles*/
-.navbar__menu ul {
-    background: white;
-    padding-left: 0;
-    margin: 0;
-    text-align: center;
-}
-
-.navbar__menu li {
-    display: inline-block;
-}
-
-.navbar__menu .menu__link {
-    display: inline-block;
-    padding: 1em;
-    font-weight: bold;
-    text-decoration: none;
-    color: #000;
-}
-
-.navbar__menu .menu__link:hover {
-    background: #333;
-    color: #fff;
-    transition: ease 0.3s all;
-}
-
-/* Header Styles */
-.page__header {
-    background:green;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 5;
-}
-
-/* Footer Styles */
-.page__footer {
-    background: #000;
-    padding: 3em;
-    color: #fff;
-    border: 1px solid red;
-}
-
-.page__footer p{
-    color: #fff;
-}
-
 
 /* ---- Theme Rules ---- */
 /* Landing Container Styles */
@@ -156,12 +167,25 @@ section:nth-of-type(even) .landing__container {
     text-align: right; 
 }
 
+#section1 {
+    border: 3px solid purple;
+    width: 100%;
+    /* max-height: 1800px; */
+    /* max-height: 3000px; */
+    /* min-height: 50%; */
+    /* max-height: 100%; */
+    min-height: auto;
+    max-height: 1800px;
+    /* max-height: 2000px; */
+}
+
 .section1-container {
     background: url(../img/hanok.jpg);
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: right;
     height: 500px;
+    padding: 4em;
 }
 
 .section1-container2 {
@@ -173,16 +197,9 @@ section:nth-of-type(even) .landing__container {
     justify-content: center;
     text-align: center;
 }
- 
-.why-seoul {
-    margin-block-start: 1em;
-    margin-block-start: 1em;
-    
-}
 
-.seoul_image {
-    max-width: 100%;
-    width: 100%;
+.seoul-purpose {
+    border: 3px solid orange
 }
 
 .seoul-description {
@@ -192,7 +209,25 @@ section:nth-of-type(even) .landing__container {
     flex-direction: column;
     justify-content: center;
     text-emphasis: center;
-    border: 1px solid blue;
+    margin-block-end: 5em;
+}
+
+.why-seoul {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.why-seoul-read-more {
+    margin-block-start: 0.5em;
+    margin-block-end: 5em;
+}
+
+.seoul-image {
+    max-width: 100%;
+    width: 100%;
+    min-height: 60%;
+    max-height: 100%;
+    border: 3px solid black;
 }
 
 .seoul-image .image-sliderfade img {
@@ -281,6 +316,17 @@ img {
     background-repeat: no-repeat;
     background-position: 0 0;
     height: 500px;
+    padding: 4em;
+}
+
+.section2-container2 {
+    width: 100%;
+    max-height: 1800px;
+    height: 100%;
+    padding: 4em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 .section3-container {
@@ -341,3 +387,14 @@ img {
     padding: 10px;
 }
 
+/* Footer Styles */
+.page__footer {
+    background: #000;
+    padding: 3em;
+    color: #fff;
+    border: 1px solid red;
+}
+
+.page__footer p{
+    color: #fff;
+}
