@@ -75,6 +75,14 @@ p {
     font-size: 1.5rem;
     font-weight: 300;
 }
+
+.read-seoul {
+    font-family: Miller Daily,Georgia,Times,Times New Roman,serif;
+}
+span {
+    font-size: 30px; 
+    border: 3px solid pink;
+}
 a:hover, a:visited, a:link, a:active {
     text-decoration: none;
     color: grey;
@@ -109,8 +117,9 @@ main {
 
 .korea-header-letter {
     position: absolute;
-    bottom: 50%;
+    bottom: 58%;
     height: 25%;
+    width: 100%;
 }
 
 .south-korea {
@@ -133,7 +142,7 @@ main {
 
 .korea-header-logo{
     position: absolute;
-    bottom: 20%;
+    bottom: 15%;
     right: 5%;
     width: 30%;
     display: flex;
@@ -170,13 +179,7 @@ section:nth-of-type(even) .landing__container {
 #section1 {
     border: 3px solid purple;
     width: 100%;
-    /* max-height: 1800px; */
-    /* max-height: 3000px; */
-    /* min-height: 50%; */
-    /* max-height: 100%; */
-    min-height: auto;
-    max-height: 1800px;
-    /* max-height: 2000px; */
+    height: auto;
 }
 
 .section1-container {
@@ -198,28 +201,26 @@ section:nth-of-type(even) .landing__container {
     text-align: center;
 }
 
-.seoul-purpose {
-    border: 3px solid orange
-}
-
 .seoul-description {
     min-width: 100%;
     width: 100%;
+    height: auto;
+    border: 3px solid peru;
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-emphasis: center;
-    margin-block-end: 5em;
+    margin-block-end: 2em;
 }
 
 .why-seoul {
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
 }
 
 .why-seoul-read-more {
     margin-block-start: 0.5em;
-    margin-block-end: 5em;
+    margin-block-end: 2em;
 }
 
 .seoul-image {
@@ -228,6 +229,8 @@ section:nth-of-type(even) .landing__container {
     min-height: 60%;
     max-height: 100%;
     border: 3px solid black;
+    text-align: center;
+    margin-block-end: 3em;
 }
 
 .seoul-image .image-sliderfade img {
@@ -259,10 +262,8 @@ img {
     font-size: 15px; 
     padding: 50px 80px; 
     position: absolute; 
-    /* right: 2px;  */
-    bottom: 50px; 
+    bottom: 3%; 
     width: 40%; 
-    /* background: rgba(0, 0, 0, .7);  */
     text-align: left;
   }
 
@@ -310,6 +311,14 @@ img {
     justify-content: center;
     align-items: center;
 }
+
+#section2 {
+    border: 3px solid purple;
+    width: 100%;
+    height: auto;
+    height: 100%;
+}
+
 .section2-container {
     background: url(../img/korea-train.jpg);
     background-size: 50% 100%;
@@ -321,12 +330,40 @@ img {
 
 .section2-container2 {
     width: 100%;
-    max-height: 1800px;
-    height: 100%;
+    min-height: 1800px;
+    height: auto;
     padding: 4em;
     display: flex;
+    /* flex-direction: column; */
     justify-content: center;
     text-align: center;
+    border: 3px solid orange;
+}
+
+.seoul-attractions {
+    /* max-width: 30%; */
+    min-width: 100%;
+    width: 100%;
+    border: 2px solid darkorchid; 
+    height: auto;
+    /* text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.seoul-attraction {
+    height: auto; 
+    width: 100%; 
+    border: 5px solid palegoldenrod;
+    margin-block-start: 3em; 
+    margin-block-end: 2em;
+}
+
+.what-to-do {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    border: 1px solid red;
 }
 
 .section3-container {
@@ -337,12 +374,80 @@ img {
     height: 500px;
 }
 
+.section3-container2 {
+    width: 100%;
+    min-height: 1800px;
+    height: auto;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid orange;
+}
+
+.food-seoul {
+    border: 3px solid sienna;
+    margin-block-start: 1em; 
+    margin-block-end: 2em;
+}
+
+.food-seoul-map {
+    width: 30%; 
+    height:30%;
+}
+
+.food-seoul-map {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.food-seoul-map:hover {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+.hover-food {
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+}
+
+.hover-food:hover {
+    opacity: .5;
+}
+
+.mangoplate {
+    color: #8f959e;
+}
+
 .section4-container {
     background: url(../img/meetup_together.jpg);
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
     height: 500px;
+    padding: 4em;
+}
+
+.section4-container2 {
+    width: 100%;
+    /* min-height: 1800px; */
+    height: auto;
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    border: 3px solid orange;
+}
+
+.seoul-meetup {
+    border: 3px solid salmon;
+    margin-block-start: 1em; 
+    margin-block-end: 2em;
 }
 
 .image__container {
@@ -350,8 +455,6 @@ img {
     margin: auto;
     box-sizing: border-box; 
 }
-
-
 
 #carousel{
     width: 100%;
