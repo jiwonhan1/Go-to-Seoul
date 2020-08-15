@@ -7,7 +7,11 @@
   <title>Go Seoul</title>
   <!-- Load Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300" rel="stylesheet">
+  <!-- Load Google Icons -->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- Font Awesome  -->
+  <script src="https://kit.fontawesome.com/69e8874ccd.js" crossorigin="anonymous"></script>
+  <!-- CSS -->
   <link href="css/styles.css" rel="stylesheet">
   <!-- Mapbox -->
   <script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
@@ -25,7 +29,7 @@
         <li class="menu__link">ToDo</li>
         <li class="menu__link">K Food</li>
         <li class="menu__link">Make Friends</li>
-        <li class="menu__link">Contact</li>
+        <li class="menu__link">Recommendation</li>
       </ul>
     </nav>
   </header>
@@ -139,6 +143,7 @@
       <div class="section2-container" style="border: 1px solid blue; width:100%;"> 
         <div class="landing__container">
           <h2>What To Do</h2>
+          <p>It's exciting to plan what to do when you are taking a journey to a new country. Seoul is complex and has diverse colors. Ready to dive into Seoul?</p>
         </div>
       </div>
       <div class="section2-container2">
@@ -146,7 +151,7 @@
           <div class="seoul-attraction history">
             <span>History<i class="material-icons">history</i></span>
             <div class="what-to-do">
-              <p class="p-description">Abundant number of sites and attractions with tangy and addictive food are everywhere.</p>
+              <p class="p-description">Seoul was a capital city in Chosun Dynasty. There are palaces around the city.</p>
             </div>
             <div class="card-deck" style="margin-top: 20px;">
               <div class="card">
@@ -177,6 +182,9 @@
           </div>
           <div class="seoul-attraction culture">
             <span>Arts & Culture<i class="material-icons">brush</i></span>
+            <div class="what-to-do">
+              <p class="p-description">Want to experience various arts and culture in Seoul? There are many spots to go!</p>
+            </div>
             <div class="card-deck" style="margin-top: 20px;">
               <div class="card">
                 <img class="card-img-top" src="img/namsanT.jpeg" alt="Namsan" style="height: 250px;">
@@ -205,7 +213,7 @@
             </div>
             
           </div>
-          <div id="map" style='width: 100%; height: 20%; max-height: 20%; margin-top: 20px; border: 3px solid red'></div>
+          <div id="map"></div>
           </div>
           
         </div>
@@ -245,7 +253,7 @@
           </div>
         </div>
       <div class="food-seoul mangolate">
-        <p class="mangoplate"><a href="https://www.mangoplate.com/en/" target="_blank"><img class="mangoplate" src="img/mango_plate.png" style="width: 130px; height: 70px;"></a>Visit Mangoplate to learn good places!</p>
+        <img class="mangoplate" src="img/mango_plate.png" style="width: 130px; height: 70px;"><a class ="cool-link" href="https://www.mangoplate.com/en/" target="_blank">Visit Mangoplate to learn good places!</a>
       </div>
     </div>     
     </section>
@@ -365,14 +373,24 @@
     </div>
     </section>
     <section id="section5" data-nav="Section 5">
-      <h2 class="content-head is-center">Contact Us!</h2>
-  <aside>
-       <p>
-           I would <em>love</em> to hear from you! </p>
-           <p>Please use the <b><em>Contact Form</em></b>
-           to send us a message.
-       </p>
-   </aside>
+      <h2 class="content-head is-center">Contact Jiwon!</h2>
+  <div class="contact jiwon">
+    <div class="jiwon intro">
+       <p>I would <em>love</em> to hear from you! </p>
+           <img src="img/jiwon.png" style="width: 20%; height: 15%; border-radius: 50%;">
+          </div>
+          <div class="jiwon desc">
+           <p>Jiwon is from Korea and lived in Seoul before. Please contact Jiwon for any comments or questions.</p>
+           <p>Jiwon will recommend secret spots!</p>
+           
+          </div>
+   </div>
+   <div class="contact email">
+     <div class="email-intro">
+    <p>Please use the <b><em>Contact Form</em></b>
+      to send us a message.</p>
+    </div>
+    <div class="email-form">
       <form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net"
       action="https://script.google.com/macros/s/AKfycbyoPjJvuKPEMKMbRaCLYZegR3zrYzdRH-2Y2ZFl27cYFcD_S_Jp/exec">
 
@@ -386,9 +404,11 @@
   </div>
   <div class="form-group">
     <label for="exampleFormControlTextarea1">Message</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hi Jiwon!"></textarea>
   </div>
-    
+  <button type="button" class="btn btn-outline-secondary">
+    <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
+</div>
         <!-- Customise the Thankyou Message People See when they submit the form: -->
         <div class="thankyou_message" style="display:none;">
           <h2><em>Thanks</em> for contacting us!
@@ -396,10 +416,17 @@
         </div>
     
       </form>
+    </div>
+    </div>
     </section>
   </main>
   <footer class="page__footer">
     <p>&copy Jiwon Han</p>
+    <div class="personal icons">
+      <a href="https://github.com/jiwon-seattle" target="_blank"><i class="fab fa-github-alt"></i></a>
+      <a href="https://www.linkedin.com/in/jiwon1han/" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-messenger"></i></a>
+   </div>
   </footer>
 
       <!-- Bootstrap -->

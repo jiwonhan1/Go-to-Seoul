@@ -83,9 +83,33 @@ span {
     font-size: 30px; 
     border: 3px solid pink;
 }
+
+
 a:hover, a:visited, a:link, a:active {
-    text-decoration: none;
     color: grey;
+    text-decoration: none !important;
+}
+
+.cool-link {
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    font-family: 'Baloo Tamma 2', cursive;
+}
+
+.cool-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: width .3s;
+    text-decoration: none;
+}
+
+.cool-link:hover::after {
+    width: 100%;
+    text-decoration: none;
 }
 
 /* ---- Layout Rules ---- */
@@ -313,10 +337,28 @@ img {
 }
 
 #section2 {
-    border: 3px solid purple;
+    border: 3px solid black;
     width: 100%;
     height: auto;
     height: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    #section2 {
+      width: 100%;
+      height: auto;
+      min-height: 4600px;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    /* For mobile phones: */
+    #section2 {
+      width: 100%;
+      min-height: auto;
+      max-height: 4800px;
+    }
 }
 
 .section2-container {
@@ -344,12 +386,21 @@ img {
     /* max-width: 30%; */
     min-width: 100%;
     width: 100%;
-    border: 2px solid darkorchid; 
+    border: 2px solid yellow; 
     height: auto;
     /* text-align: center;
     display: flex;
     justify-content: center;
     align-items: center; */
+}
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .seoul-attractions {
+      width: 100%;
+      height: auto;
+      border: 4px solid sandybrown;
+    }
 }
 
 .seoul-attraction {
@@ -363,7 +414,22 @@ img {
 .what-to-do {
     margin-block-start: 1em;
     margin-block-end: 1em;
-    border: 1px solid red;
+}
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    #map {
+      width: 100%;
+      height: 350px;
+    }
+}
+
+@media only screen and (min-width: 500px) {
+    /* For mobile phones: */
+    #map {
+      width: 100%;
+      height: 350px;
+    }
 }
 
 .section3-container {
@@ -419,10 +485,6 @@ img {
     opacity: .5;
 }
 
-.mangoplate {
-    color: #8f959e;
-}
-
 .section4-container {
     background: url(../img/meetup_together.jpg);
     background-size: 50% 100%;
@@ -448,12 +510,6 @@ img {
     border: 3px solid salmon;
     margin-block-start: 1em; 
     margin-block-end: 2em;
-}
-
-.image__container {
-    position: relative; 
-    margin: auto;
-    box-sizing: border-box; 
 }
 
 #carousel{
@@ -490,8 +546,44 @@ img {
     padding: 10px;
 }
 
-/* email */
+#section5 {
+    /* background-color: #FAF0E6; */
+    text-align: center;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    border: 2px solid black;
+    /* min-height: 1000px; */
+    height: auto;
+}
 
+.contact.jiwon {
+    border: 3px solid salmon;
+    margin-block-start: 1em; 
+    margin-block-end: 2em;
+    
+}
+
+.contact.email {
+    border: 3px solid salmon;
+    margin-block-start: 1em; 
+    margin-block-end: 2em;
+}
+
+.gform.pure-form.pure-form-stacked {
+    border: 3px solid greenyellow;
+    width: 75%;
+}
+
+/* email */
+.email-form {
+    border: 2px solid purple;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Baloo Tamma 2', cursive;
+} 
 
 /* Footer Styles */
 .page__footer {
@@ -504,3 +596,12 @@ img {
 .page__footer p{
     color: #fff;
 }
+
+.personal.icons {
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+    border: 3px solid white;
+    width: 180px;
+}
+
