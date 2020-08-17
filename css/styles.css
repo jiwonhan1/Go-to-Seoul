@@ -58,11 +58,16 @@ h1 {
 
 h2 {
     border-bottom: 2px solid #f54242;
+    border-bottom-width: 1px;
     /* width: 100%; */
     /* font-family: 'Oxygen', Sans-Serif; */
     font-size: 4em;
     color: #fff;
     color: black;
+}
+
+h2#contact-header {
+    border-bottom: none;
 }
 
 p {
@@ -352,12 +357,10 @@ img {
     }
 }
 
-@media only screen and (min-width: 600px) {
-    /* For mobile phones: */
+@media only screen and (min-width: 501px) {
     #section2 {
       width: 100%;
-      min-height: auto;
-      max-height: 4800px;
+      height: auto;
     }
 }
 
@@ -388,17 +391,14 @@ img {
     width: 100%;
     border: 2px solid yellow; 
     height: auto;
-    /* text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center; */
+
 }
 
 @media only screen and (max-width: 500px) {
     /* For mobile phones: */
     .seoul-attractions {
       width: 100%;
-      height: auto;
+      height: 1800px;
       border: 4px solid sandybrown;
     }
 }
@@ -425,7 +425,6 @@ img {
 }
 
 @media only screen and (min-width: 500px) {
-    /* For mobile phones: */
     #map {
       width: 100%;
       height: 350px;
@@ -547,37 +546,53 @@ img {
 }
 
 #section5 {
-    /* background-color: #FAF0E6; */
+    background-color: #F5FFFA;
     text-align: center;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    border: 2px solid black;
-    /* min-height: 1000px; */
+    width: 100%;
     height: auto;
+    /* border: 3px solid salmon; */
+}
+
+.section5-container {
+    width: 100%; 
+    height: 120px; 
+    padding-top: 50px;
 }
 
 .contact.jiwon {
-    border: 3px solid salmon;
-    margin-block-start: 1em; 
-    margin-block-end: 2em;
-    
+    /* border: 3px solid salmon; */
+    padding-block-start: 1em; 
+    padding-block-end: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.jiwon.profile {
+    width: 300px; 
+    border-radius: 50%;  
+    padding-block-start : 2em;
+}
+
+.jiwon.desc {
+    padding-block-start: 2em;
 }
 
 .contact.email {
-    border: 3px solid salmon;
-    margin-block-start: 1em; 
-    margin-block-end: 2em;
+    /* padding-block-start: 1em;  */
+    /* margin-block-end: 2em; */
 }
 
 .gform.pure-form.pure-form-stacked {
-    border: 3px solid greenyellow;
-    width: 75%;
+    /* border: 3px solid greenyellow; */
+    width: 65%;
+    /* border: 2px solid #2F4F4F; */
+    padding-block-start: 1em; 
+    padding-block-end: 2em;
 }
 
 /* email */
 .email-form {
-    border: 2px solid purple;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -590,7 +605,6 @@ img {
     background: #000;
     padding: 3em;
     color: #fff;
-    border: 1px solid red;
 }
 
 .page__footer p{
@@ -601,7 +615,6 @@ img {
     display: flex; 
     flex-direction: row; 
     justify-content: space-between;
-    border: 3px solid white;
     width: 180px;
 }
 
