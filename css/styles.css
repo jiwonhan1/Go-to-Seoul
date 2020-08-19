@@ -79,6 +79,8 @@ p {
     color: #2c3543;
     font-size: 1.5rem;
     font-weight: 300;
+    margin-block-start: 1em; 
+    margin-block-end: 2em;
 }
 
 .read-seoul {
@@ -99,7 +101,7 @@ a:hover, a:visited, a:link, a:active {
     display: inline-block;
     color: #000;
     text-decoration: none;
-    font-family: 'Baloo Tamma 2', cursive;
+    font-family: 'Give You Glory', cursive;
 }
 
 .cool-link::after {
@@ -171,9 +173,8 @@ main {
 
 .korea-header-logo{
     position: absolute;
-    bottom: 15%;
-    right: 5%;
-    width: 30%;
+    bottom: 5%;
+    width: 500px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -190,6 +191,9 @@ section {
     padding: 1em;
     text-align: left;
     width: 50%;
+    height: auto;
+    border: 3px solid green;
+    
 }
 
 @media only screen and (min-width: 35em){
@@ -209,6 +213,16 @@ section:nth-of-type(even) .landing__container {
     border: 3px solid purple;
     width: 100%;
     height: auto;
+    
+}
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    #section1 {
+      width: 100%;
+      height: auto;
+      /* min-height: 3000px; */
+    }
 }
 
 .section1-container {
@@ -216,7 +230,8 @@ section:nth-of-type(even) .landing__container {
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: right;
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     padding: 4em;
 }
 
@@ -234,7 +249,7 @@ section:nth-of-type(even) .landing__container {
     min-width: 100%;
     width: 100%;
     height: auto;
-    border: 3px solid peru;
+    border: 3px solid paleturquoise;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -253,11 +268,12 @@ section:nth-of-type(even) .landing__container {
 }
 
 .seoul-image {
-    max-width: 100%;
+    /* max-width: 100%; */
     width: 100%;
-    min-height: 60%;
-    max-height: 100%;
-    border: 3px solid black;
+    /* min-height: 60%;
+    max-height: 100%; */
+    height: auto;
+    border: 3px solid red;
     text-align: center;
     margin-block-end: 3em;
 }
@@ -265,9 +281,9 @@ section:nth-of-type(even) .landing__container {
 .seoul-image .image-sliderfade img {
     max-width: 90%;
     width: 100%;
-    min-height: 400px;
-    max-height: 400px;
-    height: 100%;
+    /* min-height: 400px;
+    max-height: 400px; */
+    height: 400px;
 }
 
 .seoul-image .image-dot {
@@ -353,14 +369,14 @@ img {
     #section2 {
       width: 100%;
       height: auto;
-      min-height: 4600px;
     }
 }
 
-@media only screen and (min-width: 501px) {
+@media only screen and (min-width: 600) {
     #section2 {
       width: 100%;
-      height: auto;
+      min-height: auto;
+      max-height: 4800px;
     }
 }
 
@@ -369,7 +385,8 @@ img {
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     padding: 4em;
 }
 
@@ -379,10 +396,18 @@ img {
     height: auto;
     padding: 4em;
     display: flex;
-    /* flex-direction: column; */
     justify-content: center;
     text-align: center;
     border: 3px solid orange;
+}
+
+@media only screen and (max-width: 500px) {
+    /* For mobile phones: */
+    .section2-container2 {
+      width: 100%;
+      height: auto;
+      /* border: 4px solid sandybrown; */
+    }
 }
 
 .seoul-attractions {
@@ -398,8 +423,8 @@ img {
     /* For mobile phones: */
     .seoul-attractions {
       width: 100%;
-      height: 1800px;
-      border: 4px solid sandybrown;
+      height: auto;
+      /* border: 4px solid sandybrown; */
     }
 }
 
@@ -424,7 +449,7 @@ img {
     }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 600px) {
     #map {
       width: 100%;
       height: 350px;
@@ -436,7 +461,9 @@ img {
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: right;
-    height: 500px;
+    height: auto;
+    min-height: 500px;
+    padding: 4em;
 }
 
 .section3-container2 {
@@ -460,6 +487,8 @@ img {
 .food-seoul-map {
     width: 30%; 
     height:30%;
+    margin-block-start: 1em; 
+    margin-block-end: 2em;
 }
 
 .food-seoul-map {
@@ -484,12 +513,42 @@ img {
     opacity: .5;
 }
 
+/* food image grid */
+
+.food-seoul.gangnam_image {
+    border: 3px solid red;
+    width: 100%;
+    height: 500px;
+}
+
+#food1 { grid-area: food1; }
+#food2 { grid-area: food2; }
+#food3 { grid-area: food3; }
+#food4 { grid-area: food4; }
+
+.gangnam_image {
+    display: grid;
+    grid-template-areas: 
+    'food1 food4 food4 food4 food3 food3'
+    'food1 food4 food4 food4 food3 food3'
+    'food1 food4 food4 food4 food2 food2'
+    'food1 food4 food4 food4 food2 food2';
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+#mangoplate {
+    width: 130px; 
+    height: 70px;
+}
+
 .section4-container {
     background: url(../img/meetup_together.jpg);
     background-size: 50% 100%;
     background-repeat: no-repeat;
     background-position: 0 0;
-    height: 500px;
+    height: auto;
+    min-height: 500px;
     padding: 4em;
 }
 
@@ -504,6 +563,12 @@ img {
     text-align: center;
     border: 3px solid orange;
 }
+
+#meetup {
+    width: 220px; 
+    height: 200px;
+}
+
 
 .seoul-meetup {
     border: 3px solid salmon;
@@ -527,30 +592,11 @@ img {
     width: 50%;
 }
 
-/* food image grid */
-
-#food1 { grid-area: food1; }
-#food2 { grid-area: food2; }
-#food3 { grid-area: food3; }
-#food4 { grid-area: food4; }
-
-.gangnam_image {
-    display: grid;
-    grid-template-areas: 
-    'food1 food4 food4 food4 food3 food3'
-    'food1 food4 food4 food4 food3 food3'
-    'food1 food4 food4 food4 food2 food2'
-    'food1 food4 food4 food4 food2 food2';
-    grid-gap: 10px;
-    padding: 10px;
-}
-
 #section5 {
-    background-color: #F5FFFA;
     text-align: center;
     width: 100%;
     height: auto;
-    /* border: 3px solid salmon; */
+    border: 3px solid salmon;
 }
 
 .section5-container {
@@ -566,10 +612,12 @@ img {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Roboto', sans-serif;
 }
 
 .jiwon.profile {
-    width: 300px; 
+    width: 300px;
+    height: 280px; 
     border-radius: 50%;  
     padding-block-start : 2em;
 }
@@ -597,7 +645,7 @@ img {
     display: flex;
     justify-content: center;
     text-align: center;
-    font-family: 'Baloo Tamma 2', cursive;
+    font-family: 'Roboto', sans-serif;
 } 
 
 /* Footer Styles */
