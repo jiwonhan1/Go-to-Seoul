@@ -121,7 +121,7 @@ main {
     margin: 10vh 1em 10vh;
 }
 
-.main__hero {
+.Welcome {
     min-height: 40vh;
     padding-top: 12em;
     background: url(../img/travel.jpeg);
