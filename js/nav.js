@@ -19,6 +19,9 @@ for (let i = 0; i < sectionsArray.length; i++) {
     }
 }
 
+console.log(sectionTopOffsets);
+console.log(sectionOffsetHeight);
+
 /*
  * create menu list items
  */
@@ -42,7 +45,6 @@ sectionsArray.forEach(section => {
 
 // get all the links with the class 'menu__link'
 const menuLinkItems = Array.from(document.getElementsByClassName('menu__link'));
-console.log(menuLinkItems);
 // get the height of the header
 const headerHeight = document.querySelector('.page__header').clientHeight;
 
@@ -87,14 +89,5 @@ window.addEventListener('scroll', function() {
             section.classList.remove('active');
             menuLinkItems[i].classList.remove('navbar_active');
         }
-    }
-    // get the window top offset and show the topLink when the offset is higher then a wanted value
-    const windowTopOffset = window.pageYOffset;
-    const neededOffsetToShow = 100;
-
-    if (windowTopOffset > neededOffsetToShow) {
-        topLinkElem.style.visibility = 'visible';
-    } else {
-        topLinkElem.style.visibility = 'hidden';
     }
 });
