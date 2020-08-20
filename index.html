@@ -187,7 +187,7 @@
 			<div class="landing__container">
 				<h2>K-Food</h2>
 				<p>I believe that if you want to know the country, the best way to do it is to go to a country and eat food.</p>
-				<p>It's hard to tell how the authentic the food is nowadays, but places could tell you that this is Seoul in Korea.</p>
+				<p>It's hard to tell how authentic the food is nowadays, but places could tell you that this is Seoul in Korea.</p>
 			</div>
 		</div>
 		<div class="section3-container2">
@@ -300,7 +300,8 @@
 	</section>
 	<section id="section5" data-nav="Section 5">
 		<div class="section5-container">
-			<h2 id="contact-header">Contact</h2> </div>
+      <h2 id="contact-header">Contact</h2> 
+    </div>
 		<div class="contact jiwon">
 			<div class="jiwon intro">
 				<p>I would <em>love</em> to hear from you! </p> <img class="jiwon profile" src="img/jiwon.png"> </div>
@@ -314,19 +315,21 @@
 				<form class="gform pure-form pure-form-stacked" method="POST" data-email="example@email.net" action="https://script.google.com/macros/s/AKfycbyoPjJvuKPEMKMbRaCLYZegR3zrYzdRH-2Y2ZFl27cYFcD_S_Jp/exec">
 					<div class="form-group" style="display:flex; flex-direction: row; justify-content: space-between;">
 						<div style="width: 100px;">Email</div>
-						<input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"> </div>
+            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"> 
+          </div>
 					<div class="form-group" style="display:flex; flex-direction: row; justify-content: space-between;">
 						<div style="width: 100px;">Subject</div>
-						<input type="subject" class="form-control" id="subject" placeholder="Subject"> </div>
+            <input type="subject" class="form-control" id="subject" placeholder="Subject"> 
+          </div>
 					<div class="form-group" style="display:flex; flex-direction: row; justify-content: space-between;">
 						<div style="width: 100px;">Message</div>
-						<textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Hi Jiwon!"></textarea>
+						<textarea class="form-control" id="honeypot" name="honeypot" rows="3" placeholder="Hi Jiwon!"></textarea>
 					</div>
 					<button type="button" class="btn btn-outline-secondary"> <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
-			</div>
 			<div class="thankyou_message" style="display:none;">
 				<h2><em>Thanks</em> for contacting us!
-      We will get back to you soon!</h2> </div>
+      We will get back to you soon!</h2> 
+      </div>
 			</form>
 		</div>
 		</div>
@@ -348,7 +351,7 @@
 	<script type="text/javascript" src="js/map.js"></script>
 	<script type="text/javascript" src="js/nav.js"></script>
 	<!-- send email -->
-	<script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
+	<script data-cfasync="false" src="js/form-submission-handler.js"></script>
 </body>
 
 </html>
