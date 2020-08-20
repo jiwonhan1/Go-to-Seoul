@@ -281,12 +281,9 @@ img {
 
 .img-caption {
     color: #f2f2f2; 
-    font-size: 15px; 
-    position: relative; 
-    bottom: 30px;
-    left: 80px; 
-    width: 200px; 
-    text-align: left;
+    position: absolute;
+    bottom: 50px;
+    left: 100px;
   }
 
 .dot {
@@ -514,7 +511,6 @@ img {
 
 .section4-container2 {
     width: 100%;
-    /* min-height: 1800px; */
     height: auto;
     padding: 4em;
     display: flex;
@@ -552,10 +548,10 @@ img {
     height: 200px;
 }
 
-
-.seoul-meetup {
-    margin-block-start: 1em; 
-    margin-block-end: 2em;
+.seoul-meetup.carousel {
+    width: 70%; 
+    height:100%; 
+    margin-left: 15%;
 }
 
 #carousel{
