@@ -57,10 +57,8 @@ h1 {
 }
 
 h2 {
-    border-bottom: 2px solid #f54242;
+    border-bottom: 2px solid black;
     border-bottom-width: 1px;
-    /* width: 100%; */
-    /* font-family: 'Oxygen', Sans-Serif; */
     font-size: 4em;
     color: #fff;
     color: black;
@@ -86,9 +84,9 @@ p {
 .read-seoul {
     font-family: Miller Daily,Georgia,Times,Times New Roman,serif;
 }
+
 span {
     font-size: 30px; 
-    border: 3px solid pink;
 }
 
 
@@ -119,7 +117,6 @@ a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
 
-/* ---- Layout Rules ---- */
 main {
     margin: 10vh 1em 10vh;
 }
@@ -185,15 +182,11 @@ section {
     min-height: 80vh;
 }
 
-/* ---- Theme Rules ---- */
-/* Landing Container Styles */
 .landing__container {
     padding: 1em;
     text-align: left;
     width: 50%;
     height: auto;
-    border: 3px solid green;
-    
 }
 
 @media only screen and (min-width: 35em){
@@ -210,18 +203,15 @@ section:nth-of-type(even) .landing__container {
 }
 
 #section1 {
-    border: 3px solid purple;
     width: 100%;
     height: auto;
     
 }
 
 @media only screen and (max-width: 500px) {
-    /* For mobile phones: */
     #section1 {
       width: 100%;
       height: auto;
-      /* min-height: 3000px; */
     }
 }
 
@@ -249,7 +239,6 @@ section:nth-of-type(even) .landing__container {
     min-width: 100%;
     width: 100%;
     height: auto;
-    border: 3px solid paleturquoise;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,23 +246,13 @@ section:nth-of-type(even) .landing__container {
     margin-block-end: 2em;
 }
 
-.why-seoul {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-}
-
 .why-seoul-read-more {
-    margin-block-start: 0.5em;
     margin-block-end: 2em;
 }
 
 .seoul-image {
-    /* max-width: 100%; */
     width: 100%;
-    /* min-height: 60%;
-    max-height: 100%; */
     height: auto;
-    border: 3px solid red;
     text-align: center;
     margin-block-end: 3em;
 }
@@ -281,8 +260,6 @@ section:nth-of-type(even) .landing__container {
 .seoul-image .image-sliderfade img {
     max-width: 90%;
     width: 100%;
-    /* min-height: 400px;
-    max-height: 400px; */
     height: 400px;
 }
 
@@ -358,14 +335,12 @@ img {
 }
 
 #section2 {
-    border: 3px solid black;
     width: 100%;
     height: auto;
     height: 100%;
 }
 
 @media only screen and (max-width: 500px) {
-    /* For mobile phones: */
     #section2 {
       width: 100%;
       height: auto;
@@ -398,41 +373,32 @@ img {
     display: flex;
     justify-content: center;
     text-align: center;
-    border: 3px solid orange;
 }
 
 @media only screen and (max-width: 500px) {
-    /* For mobile phones: */
     .section2-container2 {
       width: 100%;
       height: auto;
-      /* border: 4px solid sandybrown; */
     }
 }
 
 .seoul-attractions {
-    /* max-width: 30%; */
     min-width: 100%;
     width: 100%;
-    border: 2px solid yellow; 
     height: auto;
-
 }
 
 @media only screen and (max-width: 500px) {
-    /* For mobile phones: */
     .seoul-attractions {
       width: 100%;
       height: auto;
-      /* border: 4px solid sandybrown; */
     }
 }
 
 .seoul-attraction {
     height: auto; 
     width: 100%; 
-    border: 5px solid palegoldenrod;
-    margin-block-start: 3em; 
+    /* margin-block-start: 3em;  */
     margin-block-end: 2em;
 }
 
@@ -442,7 +408,6 @@ img {
 }
 
 @media only screen and (max-width: 500px) {
-    /* For mobile phones: */
     #map {
       width: 100%;
       height: 350px;
@@ -475,20 +440,16 @@ img {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: 3px solid orange;
 }
 
 .food-seoul {
-    border: 3px solid sienna;
     margin-block-start: 1em; 
     margin-block-end: 2em;
 }
 
 .food-seoul-map {
-    width: 30%; 
-    height:30%;
-    margin-block-start: 1em; 
-    margin-block-end: 2em;
+    width: 270px; 
+    height:270px;
 }
 
 .food-seoul-map {
@@ -516,9 +477,8 @@ img {
 /* food image grid */
 
 .food-seoul.gangnam_image {
-    border: 3px solid red;
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
 #food1 { grid-area: food1; }
@@ -561,7 +521,6 @@ img {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    border: 3px solid orange;
 }
 
 #meetup {
@@ -571,7 +530,6 @@ img {
 
 
 .seoul-meetup {
-    border: 3px solid salmon;
     margin-block-start: 1em; 
     margin-block-end: 2em;
 }
@@ -579,7 +537,6 @@ img {
 #carousel{
     width: 100%;
     height: 100%;
-    border: 1px solid pink;
 }
 
 .carousel-inner {
@@ -596,7 +553,6 @@ img {
     text-align: center;
     width: 100%;
     height: auto;
-    border: 3px solid salmon;
 }
 
 .section5-container {
@@ -606,7 +562,6 @@ img {
 }
 
 .contact.jiwon {
-    /* border: 3px solid salmon; */
     padding-block-start: 1em; 
     padding-block-end: 2em;
     display: flex;
@@ -626,15 +581,8 @@ img {
     padding-block-start: 2em;
 }
 
-.contact.email {
-    /* padding-block-start: 1em;  */
-    /* margin-block-end: 2em; */
-}
-
 .gform.pure-form.pure-form-stacked {
-    /* border: 3px solid greenyellow; */
     width: 65%;
-    /* border: 2px solid #2F4F4F; */
     padding-block-start: 1em; 
     padding-block-end: 2em;
 }
