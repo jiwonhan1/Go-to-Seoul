@@ -1,5 +1,4 @@
-mapboxgl.accessToken =
-  "pk.eyJ1Ijoiaml3b25oYW4iLCJhIjoiY2thOGc4ZzQxMDNndTJxbXpraWZ6cW5laiJ9.4DijaBZ9jfWAZFSOUFuckw";
+mapboxgl.accessToken = `${process.env.API_KEY}`;
 var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/mapbox/streets-v11",
