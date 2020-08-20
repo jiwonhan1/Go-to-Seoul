@@ -616,6 +616,26 @@ img {
     font-family: 'Roboto', sans-serif;
 } 
 
+.form-group {
+    display:flex; 
+    flex-direction: row;
+    justify-content: space-around;
+    /* border: 3px solid salmon; */
+    width: 100%;
+}
+
+.form-group label {
+    width: 20%;
+}
+
+.form-group input {
+    width: 80%;
+}
+
+.form-group textarea {
+    width: 80%;
+}
+
 /* Footer Styles */
 .page__footer {
     background: #000;
