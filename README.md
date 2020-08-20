@@ -27,7 +27,7 @@ To get started, clone this repository and open `index.html` or visit https://sha
 
 ## Glossary 
 - [Bootstrap](https://getbootstrap.com/) : Buttons, Card, Form for styling.  
-- Image and letter Hover Effects : Added interactivity to elements and made effects in CSS.
+- Image and Letter Hover Effects : Added interactivity to elements and made effects in CSS.
 - Layouts : Used Flex, Grid, Position, Margin, Padding in CSS.
 - [Mapbox](https://www.mapbox.com/) : Fetched a map api and displayed popups for certain locations on click with Maki symbols. 
 - Responsive Web Design : Used media queries to make fittable pages for all devices and DOM to make sliders and scrolling nav bar.
