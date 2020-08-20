@@ -12,8 +12,6 @@
 
 ## Instructions
 
-<img src="img/overview.gif" width="700px" height="400px"/>
-
 A Udacity front-end project. This is a single and static web-page that has travelwise information of Seoul of Korea. There are 5 sections : brief introduction of Seoul, What to do, K Food, Make Friends and Contact. A user is able to navigate all of them by clicking nav-bar menu. Each section has a useful information such as location and other references and nice real photos of Seoul.        
 
 To get started, clone this repository and open `index.html` or visit https://sharp-golick-57e97d.netlify.app/ (Netlify page does not working with nav-bar scrolling).
@@ -29,7 +27,7 @@ To get started, clone this repository and open `index.html` or visit https://sha
 
 ## Glossary 
 - [Bootstrap](https://getbootstrap.com/) : Buttons, Card, Form for styling.  
-- Image and letter Hover Effects : Added interactivity to elements and made effects in CSS.
+- Image and Letter Hover Effects : Added interactivity to elements and made effects in CSS.
 - Layouts : Used Flex, Grid, Position, Margin, Padding in CSS.
 - [Mapbox](https://www.mapbox.com/) : Fetched a map api and displayed popups for certain locations on click with Maki symbols. 
 - Responsive Web Design : Used media queries to make fittable pages for all devices and DOM to make sliders and scrolling nav bar.
