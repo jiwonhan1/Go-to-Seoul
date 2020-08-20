@@ -1,6 +1,5 @@
 const sectionsArray = Array.from(document.getElementsByTagName('section')); 
-console.log(sectionsArray);
-console.log(sectionsArray[0].className.toLowerCase());
+
 // find all the sections in the page
 const sectionTopOffsets = [];
 const sectionOffsetHeight = [];
@@ -41,8 +40,9 @@ sectionsArray.forEach(section => {
  * create scroll functionality
  */
 
-// get all the links with the class 'scrollLink'
+// get all the links with the class 'menu__link'
 const menuLinkItems = Array.from(document.getElementsByClassName('menu__link'));
+console.log(menuLinkItems);
 // get the height of the header
 const headerHeight = document.querySelector('.page__header').clientHeight;
 
@@ -98,20 +98,3 @@ window.addEventListener('scroll', function() {
         topLinkElem.style.visibility = 'hidden';
     }
 });
-
-/*
- * scroll to top on click on topLink
- */
-
-const topLinkElem = document.getElementById('topLink');
-
-topLinkElem.addEventListener('click', function() {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
-    });
-});
-
-window.onresize = function(){ 
-    location.reload(); 
-}
