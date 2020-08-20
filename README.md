@@ -39,11 +39,7 @@ To get started, clone this repository and open `index.html` or visit https://sha
  <img src="img/bug.png" width="700px" height="350px"/>
 
  2. A grid images are scrunched in mobile view except the first one.  
-<<<<<<< HEAD
  <img src="img/bug2.png" width="700px" height="350px" />
-=======
- <img src="img/bug2.png" width="700px" height="400px"/>
->>>>>>> 1a01bbe7fb869d0b1517031c31c31c3b3e216ddf
 
  ## Contact
  Please contact at email: jiwon1.han@gmail.com.
