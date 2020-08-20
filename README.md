@@ -12,9 +12,11 @@
 
 ## Instructions
 
-This is a single and static web-page that has travelwise information of Seoul of Korea. There are 5 sections : brief introduction of Seoul, What to do, K Food, Make Friends and Contact. A user is able to navigate all of them by clicking nav-bar menu. Each section has a useful information such as location and other references and nice real photos of Seoul.        
+<img src="img/overview.gif" width="700px" height="400px"/>
 
-To get started, clone this repository and open `index.html`.
+A Udacity front-end project. This is a single and static web-page that has travelwise information of Seoul of Korea. There are 5 sections : brief introduction of Seoul, What to do, K Food, Make Friends and Contact. A user is able to navigate all of them by clicking nav-bar menu. Each section has a useful information such as location and other references and nice real photos of Seoul.        
+
+To get started, clone this repository and open `index.html` or visit https://sharp-golick-57e97d.netlify.app/ (Netlify page does not working with nav-bar scrolling).
 
 ## Technologies
 
@@ -36,10 +38,10 @@ To get started, clone this repository and open `index.html`.
  
  ## Bugs
  1. A Read-More toggling overides the image div when media query is set to mobile version.
- <img src="img/bug.png" width="700px" height="400px"/>
+ <img src="img/bug.png" width="700px" height="350px"/>
 
  2. A grid images are scrunched in mobile view except the first one.  
- <img src="img/bug2.png" width="700px" height="400px" />
+ <img src="img/bug2.png" width="700px" height="350px" />
 
  ## Contact
  Please contact at email: jiwon1.han@gmail.com.
