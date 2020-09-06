@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +7,7 @@
 	<title>Go Seoul</title>
 	<!-- Load Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Grandstander&display=swap" rel="stylesheet">
 	<!-- Load Google Icons -->
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<!-- Font Awesome  -->
@@ -16,28 +16,33 @@
 	<link href="css/styles.css" rel="stylesheet">
 	<!-- Mapbox -->
 	<script src="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.js"></script>
-	<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet" /> </head>
+	<link href="https://api.mapbox.com/mapbox-gl-js/v1.11.1/mapbox-gl.css" rel="stylesheet"/> 
+</head>
 
 <body>
 	<header class="page__header">
-    <link rel="icon" type="image/gif" href="img/bbq.jpg"/>
 		<nav class="navbar__menu">
+			<div class="navbar__logo">
+				<i class="fas fa-plane-departure"></i>
+				<a href="#">Go To Seoul</a>
+			</div>
 			<ul id="navbar__list"> 
-      </ul>
-    </nav>
+			</ul>
+			<a href="#" class="navbar__toggleBtn"><i class="fas fa-bars"></i></a>
+		</nav>
   </header>
   <main>
     <header id="header" data-nav="Welcome" class="Welcome">
-      <div class="korea-header">
-      	<div class="korea-header-letter">
-      		<p class="south-korea"><a class="south-korea-link" href="https://www.google.com/maps/place/South+Korea/@35.7354629,123.3818031,6z/data=!3m1!4b1!4m5!3m4!1s0x356455ebcb11ba9b:0x91249b00ba88db4b!8m2!3d35.907757!4d127.766922">South Korea</a></p>
-					<p class="seoul">Travel To Seoul in Korea</p>
-				</div>
-				<div class="korea-header-logo"> <img src="img/kor.png" width="100" height="100" alt="Korea Tourism Organization">
-					<a href="http://english.president.go.kr/" target="_blank"><img src="img/chunghwadae-logo.png" width="100" height="130" style="margin-top: -10px;" alt="Cheong Wa Dae"></a>
-					<a href="http://www.sto.or.kr/english/index.do" target="_blank"><img src="img/seoul-tourism-logo.png" width="100" height="70" style="margin-top: 18px;" alt="Seoul Tourism Organization"></a>
-					<a href="http://kto.visitkorea.or.kr/eng.kto" target="_blank"><img src="img/korea-tourism-logo.png" width="100" height="120" style="margin-top: -13px;" alt="Korea Tourism Organization"></a>
-				</div>
+      <div class="korea-header-letter">
+      	<span class="south-korea"><a class="south-korea-link" href="https://www.google.com/maps/place/South+Korea/@35.7354629,123.3818031,6z/data=!3m1!4b1!4m5!3m4!1s0x356455ebcb11ba9b:0x91249b00ba88db4b!8m2!3d35.907757!4d127.766922">South Korea</a></span>
+				<span class="seoul">Travel To Seoul in Korea</span>
+			</div>
+			<div class="korea-header-logo"> 
+				<img src="img/kor.png" width="100" height="100" alt="Korea Tourism Organization">
+				<a href="http://english.president.go.kr/" target="_blank">
+				<img src="img/chunghwadae-logo.png" width="100" height="130" style="margin-top: -10px;" alt="Cheong Wa Dae"></a>
+				<a href="http://www.sto.or.kr/english/index.do" target="_blank"><img src="img/seoul-tourism-logo.png" width="100" height="70" style="margin-top: 18px;" alt="Seoul Tourism Organization"></a>
+				<a href="http://kto.visitkorea.or.kr/eng.kto" target="_blank"><img src="img/korea-tourism-logo.png" width="100" height="120" style="margin-top: -13px;" alt="Korea Tourism Organization"></a>
 			</div>
 		</header>
 		<section id="section1" data-nav="Section 1" class="Seoul">
@@ -47,10 +52,14 @@
 					<p>Korea is an exciting country that has vivid and soulful spirits everywhere.
 					<br/>Seoul is a capital city of Korea which has undergone a very fast development for past 50 years. Each area has a their own story where you can time-travel between past and present.</p>
 				</div>
+				<div class="landing__container__image">
+					<img src="img/hanok.jpg">
+				</div>
 			</div>
 			<div class="section1-container2">
 				<div class="seoul-purpose">
-					<div class="seoul-description"> <span class="border-bottom">Why Seoul? <i class="material-icons">gps_fixed</i> </span>
+					<div class="seoul-description">
+						<span class="border-bottom">Why Seoul? <i class="material-icons">gps_fixed</i> </span>
 						<div class="why-seoul">
 							<p class="p-description">Abundant number of sites and attractions with tangy and addictive food are everywhere.</p>
 						<p class="p-description">Hanging out with the most fun and spiritual people makes city vibrant.</p>
@@ -110,6 +119,9 @@
 		</section>
 		<section id="section2" data-nav="Section 2" class="ToDo">
 			<div class="section2-container">
+				<div class="landing__container__image">
+					<img src="img/korea-train.jpg"> 
+				</div>
 				<div class="landing__container">
 					<h2>What To Do</h2>
 					<p>It's exciting to plan what to do when you are taking a journey to a new country. Seoul is complex and has diverse attractions. Ready to delve into it?</p>
@@ -192,17 +204,27 @@
 					<p>I believe that if you want to know the country, the best way to do it is to go to a country and eat food.</p>
 					<p>It's hard to tell how authentic the food is nowadays, but places could tell you that this is Seoul in Korea.</p>
 				</div>
+				<div class="landing__container__image">
+					<img src="img/korea-zizimy.jpeg"> 
+				</div>
 			</div>
 			<div class="section3-container2">
 				<div class="food-seoul shinchon"> 
 					<span class="border-bottom">Soju and Beer <i class="material-icons">local_drink</i> (a.k.a Somak) with an affordable BBQ <i class="material-icons">outdoor_grill</i></span>
-					<p class="p-description">If you want to feel young sprits of college students and try their soul food at the same time, I recommend you to visit Seodaemun-gu in Seoul.</p> <img class="food-seoul-map" src="img/seoul_seodaemun-gu.png" alt="seodaemun-gu">
+					<p class="p-description">If you want to feel young sprits of college students and try their soul food at the same time, I recommend you to visit Seodaemun-gu in Seoul.</p>
+				</div>
+				<div class="food-seoul shinchon image"> 
+					<img class="food-seoul-map" src="img/seoul_seodaemun-gu.png" alt="seodaemun-gu">
+				</div>
+				<div class="food-seoul shinchon"> 
 					<p class="p-description">There are Sinchon district where great colleges are located nearby.
 					<br/> Every March and April, restaurants are full of youngsters drinking and celebrating new freshmen.</p>
-					<div class="sinchon_image" style="width: 100%;display: flex; flex-direction: row; justify-content:space-evenly"> 
-						<img class="hover-food" src="img/soju.jpeg" alt="drink_soju" style="width:40%; height:300px;"> <img class="hover-food" src="img/k_bbq.jpeg" alt="k_bbq" style="width:55%; height:300px;"> 
-					</div>
 				</div>
+				<div class="food-seoul shinchon image" style="width: 100%;display: flex; flex-direction: row; justify-content:space-evenly"> 
+					<img class="hover-food" src="img/soju.jpeg" alt="drink_soju" style="width:40%; height:300px;"> <img class="hover-food" src="img/k_bbq.jpeg" alt="k_bbq" style="width:55%; height:300px;"> 
+				</div>
+			</div>
+			<div class="section3-container2">
 				<div class="food-seoul gangnam"> 
 					<span class="border-bottom">Best All-over-the-world Cuisines <i class="material-icons">local_dining</i></span>
 					<p class="p-description">Gangnam style makes everything super great.</p> 
@@ -210,10 +232,10 @@
 					<p class="p-description">You can meet diverse restaurants and I guarantee that almost of them are above the average.
 					<br/>Freshest sushi, creamy pasta, juicy hamburger, and applealing Han-jeongsik are here in Gangnam.</p>
 					<div class="food-seoul gangnam_image"> 
-						<img class="hover-food" id="food1" src="img/sushi.jpeg" alt="sushi" style="width: 200px; height: 100%;"> 
-						<img class="hover-food" id="food2" src="img/pasta.jpeg" alt="k_bbq" style="width: 100%; height: 100%;"> 
-						<img class="hover-food" id="food3" src="img/hamburger.jpeg" alt="hamburger" style="width: 100%; height: 100%;"> 
-						<img class="hover-food" id="food4" src="img/bibimbap.jpeg" alt="bibimbap" style="width: 100%; height: 100%;"> 
+						<img class="hover-food" id="food1" src="img/sushi.jpeg" alt="sushi"> 
+						<img class="hover-food" id="food2" src="img/pasta.jpeg" alt="k_bbq"> 
+						<img class="hover-food" id="food3" src="img/hamburger.jpeg" alt="hamburger"> 
+						<img class="hover-food" id="food4" src="img/bibimbap.jpeg" alt="bibimbap"> 
 					</div>
 				</div>
 				<div class="food-seoul mangolate"> 
@@ -224,6 +246,9 @@
 		</section>
 		<section id="section4" data-nav="Section 4" class="Make Friends">
 			<div class="section4-container">
+				<div class="landing__container__image">
+					<img src="img/meetup_together.jpg"> 
+				</div>
 				<div class="landing__container">
 					<h2>Make Friends</h2>
 					<p>Traveling gives you a good present that you will make good local friends.</p>
@@ -321,11 +346,13 @@
 		</section>
 		<section id="section5" data-nav="Section 5" class="Recommendation">
 			<div class="section5-container">
-      	<h2 id="contact-header">Contact</h2> 
+				<h2 id="contact-header">Contact</h2>
+				<p>I would <em>love</em> to hear from you! </p> 
     	</div>
 			<div class="contact jiwon">
 				<div class="jiwon intro">
-					<p>I would <em>love</em> to hear from you! </p> <img class="jiwon profile" src="img/jiwon.png"> </div>
+					<img class="jiwon profile" src="img/jiwon.png"> 
+				</div>
 				<div class="jiwon desc">
 					<p>Jiwon is from Korea and lived in Seoul before. Please contact Jiwon for any comments or questions.</p>
 					<p>Jiwon will recommend secret spots!</p>
@@ -368,10 +395,10 @@
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script type="text/javascript" src="js/slides.js"></script>
-	<script type="text/javascript" src="js/meetups.js"></script>
-	<script type="text/javascript" src="js/map.js"></script>
+	<script type="text/javascript" src="js/header.js" defer></script>
 	<script type="text/javascript" src="js/nav.js"></script>
+	<script type="text/javascript" src="js/slides.js"></script>
+	<script type="text/javascript" src="js/map.js"></script>
 	<!-- send email -->
 	<script data-cfasync="false" src="js/form-submission-handler.js"></script>
 </body>

@@ -2,13 +2,27 @@
 .page__header {
     position: fixed;
     top: 0;
+    right: 0;
+    left: 0;
     width: 100%;
     z-index: 5;
 }
 
 /* Navigation Styles*/
-.navbar__menu ul {
+.navbar__menu {
     background: white;
+    display: flex;
+    justify-content: row;
+    align-items: center;
+}
+
+.navbar__logo{
+    width: 15%;
+    font-family: 'Grandstander';
+    text-decoration: none;
+}
+.navbar__menu ul {
+    width: 80%;
     padding-left: 0;
     margin: 0;
     text-align: center;
@@ -32,29 +46,52 @@
     transition: ease 0.3s all;
 }
 
+.navbar__toggleBtn {
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: 24px;
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar__menu {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .navbar__logo{
+        width: 100%;
+        font-size: 24px;
+    }
+    #navbar__list {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        display: none;
+    }
+    .navbar__menu .menu__link {
+        width: 100%;
+        font-size: 15px;
+    }
+    .navbar__toggleBtn {
+        display: block;
+    }
+
+    #navbar__list.active {
+        display: flex;
+    }
+}
+
 /* ---- Base Rules ---- */
 body {
     margin: 0;
-    /* font-family: 'Merriweather', serif; */
+    padding: 0;
     color: #fff;
 }
 
 
 /* Typeography General*/
-h1 {
-     /* font-family: 'Fira Sans', sans-serif; */
-    font-size: 2em;
-    margin: 2em 1rem;
-    color: black;
-    border: 1px solid blue;
-}
-
-@media only screen and (min-width: 35em){
-    h1 {
-        font-size: 4em;
-        margin: 1.5em 2rem 0em;
-    }
-}
 
 h2 {
     border-bottom: 2px solid black;
@@ -117,37 +154,40 @@ a:hover, a:visited, a:link, a:active {
     text-decoration: none;
 }
 
-main {
-    margin: 10vh 1em 10vh;
-}
-
 .Welcome {
     min-height: 40vh;
-    padding-top: 12em;
+    margin: 0 10px;
     background: url(../img/travel.jpeg);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: 0 100%;
     min-height: 650px;
     height: 100%;
-    text-align: center;
-}
-
-.korea-header {
     display: flex;
     flex-direction: column;
-    position: absolute;
-    width: 100%;
-    height: 90%;
-    min-height: 650px;
-    top: 10%;
 }
 
 .korea-header-letter {
-    position: absolute;
-    bottom: 58%;
-    height: 25%;
     width: 100%;
+    text-align: center;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+@media only screen and (max-width: 500px){
+    .korea-header-letter {
+        top: 100px;
+        left: 0px;
+        right: 0px;
+    }
+    .korea-header-letter .seoul{
+        font-size: 25px;
+   
+    }
 }
 
 .south-korea {
@@ -155,6 +195,7 @@ main {
     color: white;
     height: 30%;
     text-transform: uppercase;
+    
 }
 
 .seoul {
@@ -170,11 +211,30 @@ main {
 
 .korea-header-logo{
     position: absolute;
-    bottom: 5%;
-    width: 500px;
+    top: 490px;
+    left: 0px;
+    right: 0px;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-    justify-content: space-around;
+    width: 100%;
+    text-align: center;
+}
+
+.korea-header-logo img {
+    max-width: 100px;
+}
+
+@media only screen and (max-width: 500px){
+    .korea-header-logo img {
+        max-width: 60px;
+    }
+}
+
+@media only screen and (max-width: 300px){
+    .korea-header-logo img {
+        max-width: 50px;
+    }
 }
 
 section {
@@ -189,47 +249,34 @@ section {
     height: auto;
 }
 
-@media only screen and (min-width: 35em){
-    .landing__container {
-        max-width: 50em;
-        padding: 4em;
-    }
-}
-
 section:nth-of-type(even) .landing__container {
     margin-right: 0;
     margin-left: auto;
     text-align: right; 
 }
 
-#section1 {
-    width: 100%;
-    height: auto;
-    
-}
-
-@media only screen and (max-width: 500px) {
-    #section1 {
-      width: 100%;
-      height: auto;
-    }
-}
-
 .section1-container {
-    background: url(../img/hanok.jpg);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    background-position: right;
+    display: flex;
+    flex-direction: row;
     height: auto;
     min-height: 500px;
     padding: 4em;
+}
+
+.landing__container__image {
+    width: 50%;
+}
+
+.landing__container__image img {
+    width: 100%;
+    height: 100%;
 }
 
 .section1-container2 {
     width: 100%;
     max-height: 950px;
     height: 100%;
-    padding: 4em;
+    padding: 2em;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -284,7 +331,16 @@ img {
     position: absolute;
     bottom: 50px;
     left: 100px;
-  }
+}
+
+@media only screen and (max-width: 500) {
+    .img-caption {
+      position: absolute;
+      right: 0;
+      left: 0px;
+      bottom: 200px;
+    }
+}
 
 .dot {
   height: 5px; 
@@ -294,7 +350,6 @@ img {
   border-color: #ddd; 
   border-width: 5 px; 
   border-style: solid; 
-  border-radius: 50%; 
   display: inline-block; 
   transition: border-color 0.6s ease; 
 }
@@ -353,10 +408,8 @@ img {
 }
 
 .section2-container {
-    background: url(../img/korea-train.jpg);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
+    display: flex;
+    flex-direction: row;
     height: auto;
     min-height: 500px;
     padding: 4em;
@@ -366,7 +419,7 @@ img {
     width: 100%;
     min-height: 1800px;
     height: auto;
-    padding: 4em;
+    padding: 2em;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -419,29 +472,47 @@ img {
 }
 
 .section3-container {
-    background: url(../img/korea-zizimy.jpeg);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    background-position: right;
     height: auto;
     min-height: 500px;
     padding: 4em;
+    display: flex;
+    flex-direction: row;
 }
 
-.section3-container2 {
-    width: 100%;
-    min-height: 1800px;
-    height: auto;
-    padding: 4em;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
+/* @media only screen and (min-width: 501px) { */
+    .section3-container2 {
+        width: 100%;
+        /* min-height: 1800px;
+        height: auto; */
+        padding: 2em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+    /* }
+}  */
+
+
+@media only screen and (max-width: 500px) {
+    .section3-container2 {
+        width: 100%;
+        height: auto;
+    }
+    .food-seoul {
+        text-align: center;
+    }
+} 
 
 .food-seoul {
     margin-block-start: 1em; 
     margin-block-end: 2em;
+}
+
+@media only screen and (max-width: 500px) {
+    .food-seoul.shinchon.image {
+        width: 100%;
+    }
 }
 
 .food-seoul-map {
@@ -473,25 +544,44 @@ img {
 
 /* food image grid */
 
-.food-seoul.gangnam_image {
-    width: 100%;
-    height: 400px;
+@media only screen and (min-width: 501px) {
+    .food-seoul .gangnam_image {
+        width: 100%;
+        height: 400px;
+    }
+    
+    #food1 { grid-area: food1; width: 200px; height: 100%; }
+    #food2 { grid-area: food2; width: 100%; height: 100%; }
+    #food3 { grid-area: food3; width: 100%; height: 100%; }
+    #food4 { grid-area: food4; width: 100%; height: 100%; }
+    
+    .gangnam_image {
+        display: grid;
+        grid-template-areas: 
+        'food1 food4 food4 food4 food3 food3'
+        'food1 food4 food4 food4 food3 food3'
+        'food1 food4 food4 food4 food2 food2'
+        'food1 food4 food4 food4 food2 food2';
+        grid-gap: 10px;
+        padding: 10px;
+    }
 }
 
-#food1 { grid-area: food1; }
-#food2 { grid-area: food2; }
-#food3 { grid-area: food3; }
-#food4 { grid-area: food4; }
+@media only screen and (max-width: 500px) {
+    .food-seoul .gangnam_image {
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-.gangnam_image {
-    display: grid;
-    grid-template-areas: 
-    'food1 food4 food4 food4 food3 food3'
-    'food1 food4 food4 food4 food3 food3'
-    'food1 food4 food4 food4 food2 food2'
-    'food1 food4 food4 food4 food2 food2';
-    grid-gap: 10px;
-    padding: 10px;
+    .food-seoul .gangnam_image img {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .food-seoul .gangnam_image #food1 { width: 200px; height: 100%; }
 }
 
 #mangoplate {
@@ -500,19 +590,17 @@ img {
 }
 
 .section4-container {
-    background: url(../img/meetup_together.jpg);
-    background-size: 50% 100%;
-    background-repeat: no-repeat;
-    background-position: 0 0;
     height: auto;
     min-height: 500px;
     padding: 4em;
+    display: flex;
+    flex-direction: row;
 }
 
 .section4-container2 {
     width: 100%;
     height: auto;
-    padding: 4em;
+    padding: 2em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -545,7 +633,7 @@ img {
 
 #meetup {
     width: 220px; 
-    height: 200px;
+    height: 180px;
 }
 
 .seoul-meetup.carousel {
@@ -608,20 +696,31 @@ img {
 }
 
 /* email */
+.contact .email {
+    width: 100%;
+}
+
 .email-form {
     width: 100%;
     display: flex;
     justify-content: center;
-    text-align: center;
     font-family: 'Roboto', sans-serif;
 } 
 
 .form-group {
+    width: 100%;
     display:flex; 
     flex-direction: row;
     justify-content: space-around;
-    /* border: 3px solid salmon; */
-    width: 100%;
+}
+
+@media only screen and (max-width: 500px) {
+    .form-group {
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
 }
 
 .form-group label {
@@ -634,6 +733,36 @@ img {
 
 .form-group textarea {
     width: 80%;
+}
+
+@media only screen and (max-width: 500px) {
+    #section1 {
+        width: 100%;
+    }
+    .section1-container,
+    .section2-container,
+    .section3-container,
+    .section4-container,
+    .section5-container {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding: 0;
+    }
+
+    .landing__container {
+      width: 100%;
+      height: 100%;
+    }
+    
+    .landing__container__image {
+      width: 100%;
+      height: 100%;
+    }
+    .landing__container__image img{
+        width: 100%;
+        height: 100%;
+      }
 }
 
 /* Footer Styles */
