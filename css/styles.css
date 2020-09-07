@@ -553,6 +553,10 @@ img {
     .food-seoul .gangnam_image #food1 { width: 200px; height: 100%; }
 }
 
+.food-seoul .mangolate {
+    height: 100%;
+}
+
 #mangoplate {
     width: 130px; 
     height: 70px;
@@ -621,8 +625,7 @@ img {
 }
 
 .carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
-    max-height: 400px;
-    min-height: 400px;
+    height: 400px;
     width: 50%;
 }
 
@@ -634,7 +637,7 @@ img {
 
 .section5-container {
     width: 100%; 
-    height: 120px; 
+    height:100%; 
     padding-top: 50px;
 }
 
