@@ -49,10 +49,10 @@ const headerHeight = document.querySelector('.page__header').clientHeight;
 // create scroll function with two arguments --> event and index
 const scrollFunc = (event, i) => {
     // stop it from jumping if not in edge
-    if (!/Edge/.test(navigator.userAgent)) {
-        event.preventDefault();
-    }
-    
+    // if (!/Edge/.test(navigator.userAgent)) {
+        
+    // }
+    event.preventDefault();
     // scroll smoothly to the position based on the section
     window.scroll({
         top: i > 0 ? sectionTopOffsets[i] + 280 : sectionTopOffsets[i],
