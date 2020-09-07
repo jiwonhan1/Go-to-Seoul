@@ -30,7 +30,7 @@ To get started, clone this repository and open `index.html` or visit https://jiw
 - Image and Letter Hover Effects : Added interactivity to elements and made effects in CSS.
 - Layouts : Used Flex, Grid, Position, Margin, Padding in CSS.
 - [Mapbox](https://www.mapbox.com/) : Fetched a map api and displayed popups for certain locations on click with Maki symbols. 
-- Responsive Web Design : Used media queries to make fittable pages for all devices and DOM to make sliders and scrolling nav bar.
+- Responsive Web Design : Used media queries to make fittable pages for all devices and DOM to make sliders and scrolling nav bar with hamburger menu tab in mobile view.
 - [Unsplash](https://unsplash.com/) : Used good quality of pictures from there. Appreciate the best photographers! :sparkles:
 - [Google Script](https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server) : Sending a email to me is set by Google Script.
  
