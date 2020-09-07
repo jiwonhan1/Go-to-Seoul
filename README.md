@@ -18,7 +18,7 @@ To get started, clone this repository and open `index.html` or visit https://jiw
 
 ## DOM 
 
-<img src="img/dom.png" width: "700px" height= "300px"/>
+<img src="img/dom.png" width="700px" height="300px"/>
 
 Dynamic active stated have been added for botn nav links and sections.
 
@@ -42,6 +42,7 @@ Dynamic active stated have been added for botn nav links and sections.
  
  ## Bugs
  1. A Read-More toggling overides the image div when media query is set to mobile version.
+ 
  <img src="img/bug.png" width="700px" height="300px"/>
 
  ## Contact
