@@ -19,9 +19,6 @@ for (let i = 0; i < sectionsArray.length; i++) {
     }
 }
 
-console.log(sectionTopOffsets);
-console.log(sectionOffsetHeight);
-
 /*
  * create menu list items
  */
@@ -45,6 +42,7 @@ sectionsArray.forEach(section => {
 
 // get all the links with the class 'menu__link'
 const menuLinkItems = Array.from(document.getElementsByClassName('menu__link'));
+
 // get the height of the header
 const headerHeight = document.querySelector('.page__header').clientHeight;
 
@@ -54,10 +52,10 @@ const scrollFunc = (event, i) => {
     if (!/Edge/.test(navigator.userAgent)) {
         event.preventDefault();
     }
-
+    
     // scroll smoothly to the position based on the section
     window.scroll({
-        top: sectionTopOffsets[i] - headerHeight,
+        top: i === 0 ? sectionTopOffsets[i] : sectionTopOffsets[i] + 200,
         left: 0,
         behavior: 'smooth'
     });
@@ -85,6 +83,7 @@ window.addEventListener('scroll', function() {
         if (topScrollOffset >= sectionTopOffsets[i] && window.pageYOffset < bottomLimit - spacing) {
             section.classList.add('active');
             menuLinkItems[i].classList.add('navbar_active');
+
         } else {
             section.classList.remove('active');
             menuLinkItems[i].classList.remove('navbar_active');

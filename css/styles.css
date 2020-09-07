@@ -258,7 +258,7 @@ section:nth-of-type(even) .landing__container {
 .section1-container {
     display: flex;
     flex-direction: row;
-    height: auto;
+    height: 100%;
     min-height: 500px;
     padding: 4em;
 }
