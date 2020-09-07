@@ -18,7 +18,7 @@ To get started, clone this repository and open `index.html` or visit https://jiw
 
 ## DOM 
 
-<img src="img/dom.png" width="700px" height="300px"/>
+<img src="img/dom.png" width="500px" height="400px"/>
 
 Dynamic active stated have been added for botn nav links and sections.
 
