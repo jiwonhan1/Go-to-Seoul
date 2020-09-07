@@ -36,10 +36,8 @@ To get started, clone this repository and open `index.html` or visit https://jiw
  
  ## Bugs
  1. A Read-More toggling overides the image div when media query is set to mobile version.
- <img src="img/bug.png" width="700px" height="350px"/>
+ <img src="img/bug.png" width="700px" height="300px"/>
 
- 2. A grid images are scrunched in mobile view except the first one.  
- <img src="img/bug2.png" width="700px" height="350px" />
 
  ## Contact
  Please contact at email: jiwon1.han@gmail.com.
