@@ -55,7 +55,7 @@ const scrollFunc = (event, i) => {
     
     // scroll smoothly to the position based on the section
     window.scroll({
-        top: i > 0 ? sectionTopOffsets[i] + 300 : sectionTopOffsets[i],
+        top: i > 0 ? sectionTopOffsets[i] + 1000 : sectionTopOffsets[i],
         left: 0,
         behavior: 'smooth'
     });
