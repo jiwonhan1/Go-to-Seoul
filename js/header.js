@@ -8,6 +8,5 @@ menu.classList.remove('clicked')
 });
 
 const links = document.querySelectorAll('.menu__link');
-console.log(links);
 
 links.forEach(link => { link.addEventListener('click', () => { menu.classList.add('clicked')})});
