@@ -17,7 +17,7 @@ A <strong>Udacity</strong> front-end <em> landing page</em> project. This is a s
 
 To get started, clone this repository and open `index.html` or visit https://jiwon-seattle.github.io/Go-to-Seoul/.
 
-<img src="img/main.png" width="600px" height="400px" /> <img src="img/main_mobile.png" width="300px" height="400px" />
+<img src="img/main.png" width="500px" height="400px" /> <img src="img/main_mobile.png" width="300px" height="400px" />
 
 ## Technologies
 
