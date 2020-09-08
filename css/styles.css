@@ -61,7 +61,7 @@
         width: 100%;
     }
     .navbar__logo{
-        width: 100%;
+        width: 70%;
         font-size: 24px;
     }
     #navbar__list {
@@ -76,10 +76,20 @@
     }
     .navbar__toggleBtn {
         display: block;
+        border: none; 
+        background: none; 
+        padding: 0px 10px; 
+    }
+    .navbar__toggleBtn:focus {
+        outline: none;
     }
 
     #navbar__list.active {
         display: flex;
+    }
+
+    #navbar__list.clicked {
+        display: none;
     }
 }
 
