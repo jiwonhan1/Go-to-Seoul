@@ -40,7 +40,9 @@ To get started, clone this repository and open `index.html` or visit https://jiw
 - [Google Script](https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server) : Sending a email to me is set by Google Script.
 
  ## Contact
- Please contact at email: jiwon1.han@gmail.com.
+  #### Jiwon Han
+  * [GitHub](https://github.com/jiwon-seattle)
+  * [LinkedIn](https://www.linkedin.com/in/jiwon1han/)
 
  ## License
 
