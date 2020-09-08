@@ -7,7 +7,6 @@
 * [Instructions](#instructions)
 * [Technologies](#Technologies)
 * [Glossary](#Glossary)
-* [Bugs](#Bugs)
 * [Contact](#Contact)
 * [License](#License)
 
@@ -31,7 +30,7 @@ To get started, clone this repository and open `index.html` or visit https://jiw
 
 ## Glossary 
 - [Bootstrap](https://getbootstrap.com/) : Buttons, Card, Form for styling.
-- [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document) Delegated event and worked with Browser Events to make a web dynamically.   
+- [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document) : Delegated event and worked with Browser Events to make a web dynamically.   
 - Image and Letter Hover Effects : Added interactivity to elements and made effects in CSS.
 - Layouts : Used Flex, Grid, Position, Margin, Padding in CSS.
 - [Mapbox](https://www.mapbox.com/) : Fetched a map api and displayed popups for certain locations on click with Maki symbols. 
