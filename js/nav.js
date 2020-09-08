@@ -46,27 +46,19 @@ const menuLinkItems = Array.from(document.getElementsByClassName('menu__link'));
 // get the height of the header
 const headerHeight = document.querySelector('.page__header').clientHeight;
 
-// create scroll function with two arguments --> event and index
-const scrollFunc = (event, i) => {
-    // stop it from jumping if not in edge
-    // if (!/Edge/.test(navigator.userAgent)) {
-        
-    // }
-    event.preventDefault();
-    // scroll smoothly to the position based on the section
-    window.scroll({
-        top: i > 0 ? sectionTopOffsets[i] + 280 : sectionTopOffsets[i],
-        left: 0,
-        behavior: 'smooth'
-    });
-};
-
-// add an event listener to every menu item and block default event
-for (let i = 0; i < menuLinkItems.length; i++) {
-    menuLinkItems[i].addEventListener('click', function() {
-        scrollFunc(event, i)
-    });
-}
+// create scroll function 
+$('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 
 /*
  * add section highlighting on scroll

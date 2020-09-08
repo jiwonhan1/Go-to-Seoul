@@ -329,17 +329,8 @@ img {
 .img-caption {
     color: #f2f2f2; 
     position: absolute;
-    bottom: 50px;
-    left: 100px;
-}
-
-@media only screen and (max-width: 500) {
-    .img-caption {
-      position: absolute;
-      right: 0;
-      left: 0px;
-      bottom: 200px;
-    }
+    bottom: 70px;
+    left: 70px;
 }
 
 .dot {
@@ -540,9 +531,6 @@ img {
     .food-seoul .gangnam_image {
         width: 100%;
         height: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
     }
 
     .food-seoul .gangnam_image img {
@@ -607,6 +595,10 @@ img {
 #meetup {
     width: 220px; 
     height: 180px;
+}
+
+.seoul-meetup {
+    height: 100%;
 }
 
 .seoul-meetup.carousel {
@@ -724,18 +716,45 @@ img {
 
     .landing__container {
       width: 100%;
-      height: 100%;
+      /* height: 100%; */
     }
     
     .landing__container__image {
       width: 100%;
-      height: 100%;
+      /* height: 100%; */
     }
     .landing__container__image img{
         width: 100%;
         height: 100%;
       }
 }
+
+@media only screen and (max-width: 500px) {
+    .Seoul.toggle {
+        height: 2480px;
+    }
+    .section1-container.toggle {
+        height: 500px;
+    }
+    .section1-container2.toggle {
+        min-height: 1500px;
+        height: 100%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .Seoul.toggle {
+        height: 2700px;
+    }
+    .section1-container.toggle {
+        height: 500px;
+    }
+    .section1-container2.toggle {
+        min-height: 1710px;
+        height: 100%;
+    }
+}
+
 
 /* Footer Styles */
 .page__footer {
