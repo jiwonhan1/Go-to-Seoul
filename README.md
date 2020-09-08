@@ -7,7 +7,6 @@
 * [Instructions](#instructions)
 * [Technologies](#Technologies)
 * [Glossary](#Glossary)
-* [Bugs](#Bugs)
 * [Contact](#Contact)
 * [License](#License)
 
