@@ -45,7 +45,7 @@ To get started, clone this repository and open `index.html` or visit https://jiw
 
  ## License
 
- `My Daily Journal` is open source software [licensed as MIT][license].
+ `GO TO Seoul` is open source software [licensed as MIT][license].
 
  Copyright (c) 2020 **_Jiwon Han_**
 
